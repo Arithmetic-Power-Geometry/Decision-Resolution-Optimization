@@ -35,3 +35,5 @@ Do not start the manuscript until the surviving target has:
 3. exact finite verification,
 4. large synthetic stress test,
 5. substantial real-data validation.
+
+- **T018 — PhysioNet sequential decision-reversal benchmark — COMPLETED NEGATIVE.** Real-data run 35351053995 succeeded on 4,000 PhysioNet Challenge 2012 Set A records. Binary model-world disagreement was nearly saturated (0.936–0.945) and weak for future reversal (AUROC 0.522–0.536), while confidence/entropy/margin achieved AUROC 0.631–0.746. Current disagreement hypothesis rejected; do not build T019 on binary disagreement.
