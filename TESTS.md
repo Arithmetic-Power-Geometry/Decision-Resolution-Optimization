@@ -18,7 +18,7 @@
 | T014 | Confidence–resolution separation | PASSED / NOT NOVEL ALONE | Posterior confidence 1-delta tends to 1 while a delta-mass incompatible world keeps support-based decision resolution false for every delta>0 | tests/T014_confidence_resolution_separation.py |
 | T015 | Parameter-information-gain vs resolution | PASSED / CLAIM COLLISION | A valid parameter-IG policy can spend n nuisance probes before the one decision-critical probe, giving cost n+1 versus 1; ECD/goal-oriented OED already targets this distinction | tests/T015_information_gain_resolution_gap.py |
 | T016 | Posterior decision vs guaranteed support resolution | PASSED / CLAIM COLLISION | For delta-tolerant stopping additional cost can be 0 while exact support resolution costs n; unbounded additive guarantee premium, but fixed-confidence identification already studies error-vs-evidence tradeoffs | tests/T016_posterior_vs_support_resolution.py |
-| T017 | Exact Decision Resolution to ECD reduction | EXACT REDUCTION / FOUNDATIONAL BRANCH EXHAUSTED | Worlds map to hypotheses, decision values to equivalence classes, experiments/outcomes/costs unchanged; terminal and Bellman conditions coincide | tests/T017_exact_reduction_to_ECD.py |\n| T018 | PhysioNet sequential decision-reversal benchmark | RUNNING / REAL DATA | Tests whether partial-evidence model-world disagreement predicts later evidence-induced decision reversal better than confidence, entropy, margin and ensemble probability SD | experiments/T018_physionet_sequential_reversal.py |
+| T017 | Exact Decision Resolution to ECD reduction | EXACT REDUCTION / FOUNDATIONAL BRANCH EXHAUSTED | Worlds map to hypotheses, decision values to equivalence classes, experiments/outcomes/costs unchanged; terminal and Bellman conditions coincide | tests/T017_exact_reduction_to_ECD.py |
 
 ## Novelty audit notes
 - Varying-query-set adaptive submodularity already studies adaptively changing query availability.
@@ -26,15 +26,8 @@
 - Goal-oriented OED targets downstream quantities of interest rather than full latent-state identification.
 - Sequential OED already optimizes non-myopic sequences for model discrimination, inference, and goal-oriented prediction.
 - 2026 adaptive-sensing work explicitly co-designs sensor hardware geometry and adaptive measurement policy; generic genesis+execution co-design is therefore not a novelty claim.
-- Current strongest surviving target: **not a new generic planning framework. Pivot to restricted separation theorems for decision-resolution certificates versus confidence/entropy/information-gain criteria, then validate the surviving theorem on large real data.**
 
-## Stop/write criterion
-Do not start the manuscript until the surviving target has:
-1. a non-reduction argument against closest prior frameworks,
-2. theorem-level strict separation,
-3. exact finite verification,
-4. large synthetic stress test,
-5. substantial real-data validation.
+## Completed extended tests
 
 - **T018 — PhysioNet sequential decision-reversal benchmark — COMPLETED NEGATIVE.** Real-data run 35351053995 succeeded on 4,000 PhysioNet Challenge 2012 Set A records. Binary model-world disagreement was nearly saturated (0.936–0.945) and weak for future reversal (AUROC 0.522–0.536), while confidence/entropy/margin achieved AUROC 0.631–0.746. Current disagreement hypothesis rejected; do not build T019 on binary disagreement.
 
@@ -55,3 +48,7 @@ Do not start the manuscript until the surviving target has:
 - **T026 — Real-data meta-resolution value — COMPLETED / WEAK POSITIVE, BREAKTHROUGH GATE FAILED.** UCI Covertype (581,012 rows), 10,000 evaluation cases, 10 bootstrap worlds. Static direct proxy loss 12.7339 vs meta-routing 12.70357 (reduction 0.03033, ~0.24%). Meta-routing better on only 2.42% of cases and >=10% better on 1.59%. Preserve as a negative/limiting result; do not claim practical meta-resolution advantage. Sequential OED/POMDP prior art also absorbs generic adaptive routing.
 
 - **T027 — Independent NHANES replication gate — COMPLETED / WEAK NON-REPLICATION; NEW-PAPER GATE FAILED.** NHANES 2007–2018 pooled: 56,463 eligible rows, 11,293 evaluation cases, 12 bootstrap worlds. Resolver uncertainty 3.5243%; mean RD 0.008862; RD>=0.25 only 1.7533%. Ordinary entropy predicts resolver uncertainty at AUROC 0.823793 (AUPRC 0.101931). The phenomenon exists but did not substantially replicate T025's 30.045% rate and is much more aligned with ordinary uncertainty. Costs are analyte-count proxies, not monetary fees. Per preregistered stop rule: stop the new breakthrough-paper branch; preserve result and consider only an explicit limits/boundary synthesis.
+
+## Archived research record
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
