@@ -15,7 +15,7 @@ from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.metrics import roc_auc_score,average_precision_score
 from sklearn.impute import SimpleImputer
 cycles=["E","F","G","H","I","J"] # 2007-08 ... 2017-18
-base="https://wwwn.cdc.gov/Nchs/Nhanes/{}/{}.XPT"
+base="https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/{}/DataFiles/{}.XPT"
 # component stems; demographics/questionnaire + lab panels
 files={"DEMO":["RIDAGEYR","RIAGENDR","BMXBMI"],"DIQ":["DIQ010"],
        "GHB":["LBXGH"],"GLU":["LBXGLU"],"HDL":["LBDHDD"],"TCHOL":["LBXTC"],
