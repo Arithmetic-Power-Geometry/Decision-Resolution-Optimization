@@ -1,0 +1,20 @@
+name: T023 Meta Resolution Reduction
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tests/T023_meta_resolution_reduction.py
+      - .github/workflows/t023_meta_resolution.yml
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tests/T023_meta_resolution_reduction.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: T023-results
+          path: T023_summary.json
