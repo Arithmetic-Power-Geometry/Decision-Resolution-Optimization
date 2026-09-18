@@ -45,3 +45,5 @@ Do not start the manuscript until the surviving target has:
 - **T021 — Experiment-creation reduction attack — COMPLETED / COLLISION.** Run 35354211768: 1,000 instances, 0 mismatches, equal optimal-cost fraction 1.0. Finite known one-shot creation compiles into enlarged ECD with test cost = creation + execution. Close this branch.
 
 - **T022 — Escape-cost nonidentifiability from current ECD structure — COMPLETED / MATHEMATICAL SEPARATION.** Run 35354518854 succeeded. Paired systems have identical current ECD structure but synthesis escape costs 1 vs m; tested ratio through 1024 and family is unbounded. Not yet irreducible to full OED because synthesis space/costs are externally supplied.
+
+- **T023 — Meta-resolution / experiment-choice identifiability — COMPLETED / STRONG PHENOMENON + FINITE REDUCTION COLLISION.** Run 35354758712. Cheapest resolver is itself unresolved; blind minimax cost M vs meta-probe+resolver cost 2, ratio M/2 (64 at M=128; unbounded family). But finite model reduces to augmented hidden-state planning/ECD-POMDP. Preserve phenomenon; do not claim new finite primitive.
