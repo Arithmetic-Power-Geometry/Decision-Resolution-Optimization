@@ -1,0 +1,20 @@
+name: T021 Experiment Creation Reduction
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tests/T021_experiment_creation_reduction.py
+      - .github/workflows/t021_creation_reduction.yml
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tests/T021_experiment_creation_reduction.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: T021-results
+          path: T021_summary.json
