@@ -1,0 +1,23 @@
+name: T019 PhysioNet Conflict Mass
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'experiments/T019_physionet_conflict_mass.py'
+      - '.github/workflows/t019_physionet.yml'
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install numpy pandas scikit-learn
+      - run: python experiments/T019_physionet_conflict_mass.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: T019-results
+          path: |
+            T019_summary.json
+            T019_cases.csv
