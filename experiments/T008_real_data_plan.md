@@ -32,3 +32,7 @@ At each partial feature set:
 
 ## Status
 Dataset integration pending. We should use the original public PhysioNet source and preserve its license/terms rather than commit the raw dataset blindly to GitHub.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
