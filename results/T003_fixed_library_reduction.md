@@ -26,3 +26,7 @@ The stronger target is a meta-design problem:
 4. jointly optimize genesis cost and subsequent adaptive execution cost.
 
 Next: T004 exact Minimum Resolution Expansion.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
