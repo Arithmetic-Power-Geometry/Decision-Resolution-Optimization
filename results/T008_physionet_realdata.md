@@ -1,15 +1,28 @@
-# T008 — PhysioNet 2012 Real-Data Benchmark
+# T008 — PhysioNet 2012 Real-Data Decision-Resolution Benchmark
 
-This test uses the official open-access PhysioNet/CinC Challenge 2012 Set A.
+## Reproducible run
+GitHub Actions run 35332269932 completed successfully.
 
-The official challenge contains 12,000 adult ICU stays, with 4,000 labeled records in training Set A and up to 42 recorded variables during the first 48 hours. Raw data are downloaded at runtime and are not committed to this repository.
+Dataset: PhysioNet/CinC Challenge 2012 Set A.
+- records: 4,000
+- train: 3,000
+- held-out test: 1,000
+- derived features after missingness filter: 156
+- bootstrap model worlds: 25
+- mean held-out AUROC: 0.80505
+- AUROC SD: 0.00863
 
-## Resolution test
-A bootstrap ensemble is treated as a finite set of model worlds. For each held-out patient, the downstream decision is binary mortality classification at threshold 0.5.
+## Decision-resolution result
+At decision threshold 0.5:
+- decision-unresolved held-out cases: **392 / 1,000 = 39.2%**
+- high-confidence yet decision-unresolved cases: **61 / 1,000 = 6.1%**
 
-A case is **decision-unresolved** when surviving model worlds disagree on the decision. A stronger diagnostic is **high-confidence unresolved**: the ensemble mean probability is at least 0.80 confident in one class while individual model worlds still imply incompatible decisions.
+High-confidence unresolved means the ensemble mean is at least 0.80 confident in one class while at least two compatible bootstrap model worlds still imply opposite decisions.
 
-This is intentionally different from claiming a new feature-acquisition classifier.
+## Interpretation
+This is a meaningful empirical signal: predictive confidence and decision resolution are not equivalent on this benchmark.
 
-## Status
-Workflow added. Numerical results must only be reported after the GitHub Actions run completes successfully.
+It is **not yet a novelty proof**. UAI 2026 work on adversarially robust decision-aware experimental design already reports that conventional decision-aware design can reach high-confidence but fragile decisions under adversarial variation. Our remaining distinction must therefore be the explicit finite compatible-world resolution certificate plus minimum-cost experiment-language repair.
+
+## Next test
+T009 must turn the diagnostic into an acquisition problem: from a restricted measurement set, find the cheapest additional measurement block that eliminates model-world decision disagreement, and compare against confidence/entropy or uncertainty-based acquisition.
