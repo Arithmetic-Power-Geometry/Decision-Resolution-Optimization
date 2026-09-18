@@ -36,3 +36,7 @@ What remains potentially stronger is the combination of:
 - joint optimization of expansion and execution.
 
 T005 must test whether joint genesis+execution design yields a strict separation from optimizing either stage independently.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
