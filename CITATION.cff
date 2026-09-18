@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the archived research record below."
+message: "Please cite this software and its archived research record using the metadata below."
 title: "Decision-Resolution Optimization"
 type: software
 authors:
   - family-names: "Akhtar"
     given-names: "Mohammad Amir Khusru"
 version: "V1"
-date-released: "2026"
+date-released: "2026-09-18"
 repository-code: "https://github.com/Arithmetic-Power-Geometry/Decision-Resolution-Optimization"
 license: "Apache-2.0"
 preferred-citation:
@@ -16,8 +16,5 @@ preferred-citation:
       given-names: "Mohammad Amir Khusru"
   title: "Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty"
   year: 2026
-  version: "V1"
-  publisher:
-    name: "Zenodo"
   doi: "10.5281/zenodo.22833604"
   url: "https://doi.org/10.5281/zenodo.22833604"
