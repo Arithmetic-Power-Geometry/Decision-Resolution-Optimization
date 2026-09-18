@@ -1,0 +1,20 @@
+name: T024 Generative Separation Attack
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tests/T024_generative_separation_attack.py
+      - .github/workflows/t024_generative.yml
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tests/T024_generative_separation_attack.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: T024-results
+          path: T024_summary.json
