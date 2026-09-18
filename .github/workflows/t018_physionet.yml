@@ -1,5 +1,5 @@
 name: T018 PhysioNet Sequential Reversal
-on: workflow_dispatch
+on:\n  workflow_dispatch:\n  push:\n    paths:\n      - 'experiments/T018_physionet_sequential_reversal.py'\n      - '.github/workflows/t018_physionet.yml'
 jobs:
   run:
     runs-on: ubuntu-latest
