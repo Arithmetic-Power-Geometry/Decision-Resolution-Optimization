@@ -26,3 +26,7 @@ It is **not yet a novelty proof**. UAI 2026 work on adversarially robust decisio
 
 ## Next test
 T009 must turn the diagnostic into an acquisition problem: from a restricted measurement set, find the cheapest additional measurement block that eliminates model-world decision disagreement, and compare against confidence/entropy or uncertainty-based acquisition.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
