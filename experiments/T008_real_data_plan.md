@@ -4,7 +4,7 @@
 Published adaptive covariate-acquisition work has used a PhysioNet dataset with about 12,000 patient records and 30 health variables for mortality prediction. This makes it a credible comparison benchmark for sequential feature acquisition.
 
 ## Important novelty boundary
-Cost-sensitive feature acquisition is established: algorithms already choose which feature/test to acquire next and when to stop classification. Therefore our real-data experiment must NOT claim that cheap sequential feature acquisition is new.
+Cost-sensitive feature acquisition is established: algorithms already choose which feature/test to acquire next and when to stop classification. Accordingly, cheap sequential feature acquisition is treated here as established prior art rather than a new contribution.
 
 ## Proposed DRO-specific test
 Treat a family of calibrated predictive models / bootstrap worlds as the compatible-world set. The downstream decision is a thresholded intervention/classification decision, not exact model identity.
@@ -31,7 +31,7 @@ At each partial feature set:
 - repair cost when fixed feature language is insufficient.
 
 ## Status
-Dataset integration pending. We should use the original public PhysioNet source and preserve its license/terms rather than commit the raw dataset blindly to GitHub.
+Historical planning record. The subsequent T008 implementation used the original public PhysioNet source; later tests and retained results are recorded in TESTS.md and results/.
 
 ## Citation
 
