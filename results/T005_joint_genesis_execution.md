@@ -29,3 +29,7 @@ Our candidate must rely on something those formulations do not already provide:
 4. preferably a combinatorial theorem about the minimum repair set, not merely continuous hardware co-design.
 
 Next test: T006 formal reduction/non-reduction against adaptive sensing co-design and goal-oriented sequential OED.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
