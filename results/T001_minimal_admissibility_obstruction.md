@@ -29,3 +29,7 @@ The obstruction is not lack of informative experiments. Informative experiments 
 
 ## Novelty status
 Foundational witness only. This result is too small to support a novelty claim by itself. Next tests must determine whether the phenomenon reduces exactly to existing varying-query-set, safe active-learning, or hypothesis-dependent-cost decision-tree formulations, and whether nontrivial finite/infinite separations persist at scale.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
