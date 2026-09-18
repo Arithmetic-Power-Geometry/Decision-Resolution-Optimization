@@ -18,3 +18,7 @@ This is stronger than T001 because information acquisition remains possible thro
 
 ## Novelty caution
 An unbounded penalty may still be representable in existing varying-query-set or constrained adaptive-testing frameworks. The result is therefore a structural witness, not yet a novelty claim. The next test must compare exact representability/reduction and then examine minimum experiment-language expansion.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
