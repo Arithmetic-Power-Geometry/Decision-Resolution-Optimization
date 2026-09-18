@@ -17,3 +17,7 @@ It gives us a reproducible baseline that later adaptive/admissible repair algori
 
 ## Next
 Move to a real large feature-acquisition dataset only after defining a decision-resolution criterion that is not merely ordinary classification accuracy.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
