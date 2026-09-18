@@ -69,7 +69,10 @@ def main():
     records=[]; summary=[]
     for s,P in enumerate(stage_probs[:-1],1):
         mean=P.mean(0); decisions=P>=.5
-        disagree=(decisions.min(0)!=decisions.max(0)).astype(float)\n        vote=np.mean(decisions,axis=0)\n        conflict_mass=4*vote*(1-vote)\n        vote_margin=1-np.abs(2*vote-1)
+        disagree=(decisions.min(0)!=decisions.max(0)).astype(float)
+        vote=np.mean(decisions,axis=0)
+        conflict_mass=4*vote*(1-vote)
+        vote_margin=1-np.abs(2*vote-1)
         early=(mean>=.5).astype(int); rev=(early!=final).astype(int)
         conf=np.maximum(mean,1-mean); entropy=-(mean*np.log(mean+1e-12)+(1-mean)*np.log(1-mean+1e-12))
         margin=1-np.abs(mean-.5)*2; sd=P.std(0)
