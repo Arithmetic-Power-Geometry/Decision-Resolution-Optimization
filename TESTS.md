@@ -41,3 +41,5 @@ Do not start the manuscript until the surviving target has:
 - **T019 — Quantitative decision-conflict benchmark — COMPLETED / PARTIAL NEGATIVE.** Run 35352412064 succeeded. Conflict mass substantially improves over binary disagreement (AUROC 0.609/0.690/0.713 vs 0.522/0.536/0.529 across stages) but remains below confidence/entropy/margin (0.631/0.709/0.746). Not a standalone breakthrough; proceed to actual cost-aware resolving acquisition.
 
 - **T020 — Exact cheapest decision resolution vs EC2 / IG-cost — COMPLETED / FOUNDATIONAL COLLISION.** Run 35353367847 succeeded: 1,000 heterogeneous-cost instances, 847 resolvable. EC2 mean/maximum cost ratio to exact optimum = 1.1614/2.0 (45.45% exactly optimal); IG/cost = 1.3299/2.75 (27.51% exactly optimal). Confirms exact finite cheapest decision-resolution is optimal ECD; close fixed-library foundational branch.
+
+- **T021 — Experiment-creation reduction attack — COMPLETED / COLLISION.** Run 35354211768: 1,000 instances, 0 mismatches, equal optimal-cost fraction 1.0. Finite known one-shot creation compiles into enlarged ECD with test cost = creation + execution. Close this branch.
