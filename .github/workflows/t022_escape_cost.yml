@@ -1,0 +1,20 @@
+name: T022 Escape Cost Nonidentifiability
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tests/T022_escape_cost_nonidentifiability.py
+      - .github/workflows/t022_escape_cost.yml
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tests/T022_escape_cost_nonidentifiability.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: T022-results
+          path: T022_summary.json
