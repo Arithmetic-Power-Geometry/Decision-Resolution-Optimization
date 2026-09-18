@@ -23,7 +23,7 @@ files={"DEMO":["RIDAGEYR","RIAGENDR","BMXBMI"],"DIQ":["DIQ010"],
 rows=[]
 for suf in cycles:
     # CDC cycle directory naming: 2007-2008 etc.
-    year={"E":"2007-2008","F":"2009-2010","G":"2011-2012","H":"2013-2014","I":"2015-2016","J":"2017-2018"}[suf]
+    year={"E":"2007","F":"2009","G":"2011","H":"2013","I":"2015","J":"2017"}[suf]
     merged=None
     for stem,cols in files.items():
         url=base.format(year,f"{stem}_{suf}")
