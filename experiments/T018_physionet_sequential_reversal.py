@@ -35,7 +35,11 @@ def load():
     X=pd.DataFrame(rows)
     # outcomes file
     out=pd.read_csv("https://physionet.org/files/challenge-2012/1.0.0/Outcomes-a.txt")
-    out.columns=[str(x).strip() for x in out.columns]\n    death_col=next((x for x in out.columns if x.lower().replace("_","").replace("-","")=="inhospitaldeath"),None)\n    if death_col is None: raise ValueError(f"Cannot find in-hospital death column; columns={list(out.columns)}")\n    y=pd.to_numeric(out[death_col],errors="raise").to_numpy()
+    out.columns=[str(x).strip() for x in out.columns]
+    death_col=next((x for x in out.columns if x.lower().replace("_","").replace("-","")=="inhospitaldeath"),None)
+    if death_col is None:
+        raise ValueError(f"Cannot find in-hospital death column; columns={list(out.columns)}")
+    y=pd.to_numeric(out[death_col],errors="raise").to_numpy()
     return X,y
 
 def scores(y, s):
