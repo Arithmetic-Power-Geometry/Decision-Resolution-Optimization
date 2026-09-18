@@ -24,3 +24,7 @@ Weighted set cover, test cover, sensor placement, and experiment design are esta
 decision-resolution obstruction -> minimum repair -> adaptive post-repair policy -> strict separations/approximation results.
 
 Next: large random exact instances and then a real dataset whose feature/measurement acquisition has meaningful costs.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Where Cheapest Decision-Resolving Experiments Become Old Theory—and Where They Do Not: Reductions, Escape Costs, and Resolver-Choice Uncertainty* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22833604
